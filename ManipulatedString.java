@@ -8,7 +8,7 @@ public class ManipulatedString {
     String inputText = sc.nextLine();
     System.out
         .println("Kebalikan dari kata" + " " + inputText + " " + "adalah: " + ManipulatedString.reverse(inputText));
-    ManipulatedString.Pallindrom(inputText, ManipulatedString.reverse(inputText));
+    ManipulatedString.isPallindrom(inputText, ManipulatedString.reverse(inputText));
 
     sc.close();
   }
@@ -25,15 +25,15 @@ public class ManipulatedString {
     return hasil;
   }
 
-  public static void Pallindrom(String text, String textreverse) {
+  public static void isPallindrom(String text, String textreverse) {
     String s = text;
     String r = textreverse;
 
-    boolean Pallindrom = s.equalsIgnoreCase(r);
-    if (Pallindrom) {
+    boolean isPallindrom = s.equalsIgnoreCase(r);
+    if (isPallindrom) {
       System.out.println("Kata" + " " + s + " " + "adalah Palindrom");
     } else {
-      System.out.println("Kata" + " " + s + " " + "Bukan Pallindrom");
+      System.out.println("Kata" + " " + s + " " + "Bukan isPallindrom");
     }
     System.out.println("==================================");
   }
